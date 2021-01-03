@@ -1,0 +1,125 @@
+.search {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.search-form {
+    max-width: 608px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.search-form__title {
+    font-family: 'Roboto Slab', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.search-form__subtitle {
+    max-width: 545px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 32px 0 0 0;
+}
+
+.search-form__input {
+    border: 1px solid #D1D2D6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 54px;
+    width: 608px;
+    height: 64px;
+    padding-left: 24px;
+    outline: none;
+}
+
+.search-form__button {
+    width: 168px;
+    height: 64px;
+    position: absolute;
+    top: calc(100% - 144px);
+    right: 0%;
+    background: #2F71E5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.search-form__button:hover{
+    background: #347EFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .search-form {
+        max-width: 448px;
+        padding-top: 38px;
+        padding-bottom: 48px;
+    }
+    .search-form__title {
+        max-width: 348px;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .search-form__subtitle {
+        max-width: 452px;
+        margin-top: 16px;
+    }
+    .search-form__input {
+        margin-top: 48px;
+        width: 448px;
+    height: 56px;
+    }
+    .search-form__button{
+        width: 160px;
+    height: 56px;
+    top: calc(100% - 104px);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+.search-form{
+    padding-top: 30px;
+    padding-bottom: 96px;
+    max-width: 285px;
+}
+.search-form__title{
+    font-size: 36px;
+    line-height: 40px;
+}
+.search-form__subtitle{
+    margin-top: 16px;
+    font-size: 18px;
+line-height: 24px;
+}
+.search-form__input{
+    margin-top: 122px;
+    width: 288px;
+}
+.search-form__button{
+    width: 288px;
+    top: calc(100% - 84px);
+}
+}
