@@ -9,7 +9,7 @@ function SearchForm(props) {
             <form className="search-form" onSubmit={props.onSubmit}>
                 <h1 className="search-form__title">Что творится в мире?</h1>
                 <h2 className='search-form__subtitle'>Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
-                <input className="search-form__input" type="text" placeholder="Введите тему новости" onChange={handleChange} />
+                <input className="search-form__input" type="text" placeholder="Введите тему новости" onChange={handleChange} required />
                 <button type="submit" className="search-form__button">Искать</button>
             </form>
         </section>
