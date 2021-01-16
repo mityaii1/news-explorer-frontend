@@ -1,0 +1,43 @@
+.preloader{
+    background: #F5F6F7;
+    position: relative;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.preloader__text{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 0;
+}
+
+.preloader__spin {
+	display: block;
+	width: 74px;
+	height: 74px;
+	border: 2px solid #444;
+	border-bottom-color: #888;
+	border-radius: 50%;
+	position: absolute;
+	
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

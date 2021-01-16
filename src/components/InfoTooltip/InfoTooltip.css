@@ -1,0 +1,20 @@
+.popup__container-tool-tip{
+    padding: 43px 36px 51px 36px;
+}
+
+.popup__tool-tip-title{
+margin-bottom: 14px;
+}
+
+.popup__tool-tip-link {
+    text-decoration: none;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2F71E5;
+    outline: none;
+    background: none;
+    border: none;
+}
