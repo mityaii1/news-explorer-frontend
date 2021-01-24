@@ -5,7 +5,9 @@
     justify-content: center;
     flex-direction: column;
 }
-
+.news-card-list_hidden{
+    display: none;
+}
 .news-card-list__title{
     margin: 0;
     font-family: 'Roboto Slab', 'Arial', sans-serif;

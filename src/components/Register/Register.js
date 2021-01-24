@@ -6,7 +6,7 @@ function Register(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.onInfoTooltip(true)
+        props.onRegister(props.inputValue.email, props.inputValue.password, props.inputValue.name)
     }
     return (
         <PopupWithForm name="register" title="Регистрация" buttonText="Зарегистрироваться" linkText="Войти" isOpen={props.isOpen} onClose={props.onClose} onClickLink={props.onClickLink} onSubmit={handleSubmit} isValid={props.isValid} >
@@ -53,7 +53,11 @@ function Register(props) {
                 />
                 <p className="popup__input-error">{props.inputError.name}</p>
             </div>
+
+            <p className="popup__submit-error">{props.submitErrorText}</p>
+
             <p className="popup__submit-error"></p>
+
         </PopupWithForm>
     )
 }

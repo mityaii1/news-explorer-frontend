@@ -3,8 +3,14 @@ import React from 'react';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
 
 function Login(props) {
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        props.onLogin(props.inputValue.email, props.inputValue.password);
+      };
+
     return (
-        <PopupWithForm name="login" title="Вход" buttonText="Войти" linkText="Зарегистрироваться" isOpen={props.isOpen} onClose={props.onClose} onClickLink={props.onClickLink} isValid={props.isValid} >
+        <PopupWithForm name="login" title="Вход" buttonText="Войти" linkText="Зарегистрироваться" isOpen={props.isOpen} onClose={props.onClose} onSubmit={handleSubmit} onClickLink={props.onClickLink} isValid={props.isValid} >
             <div className="popup__field">
                 <p className="popup__label">Email</p>
                 <input
@@ -33,7 +39,11 @@ function Login(props) {
                 />
                 <p className="popup__input-error">{props.inputError.password}</p>
             </div>
+
+            <p className="popup__submit-error">{props.submitErrorText}</p>
+
             <p className="popup__submit-error"></p>
+
         </PopupWithForm>
     )
 }

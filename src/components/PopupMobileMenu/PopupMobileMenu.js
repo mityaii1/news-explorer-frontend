@@ -12,7 +12,7 @@ function PopupMobileMenu(props) {
                 <button className="popup__close-menu" type="button" aria-label="Закрыть" onClick={props.onClose} ></button>
             </div>
             <div className="popup__mobile-menu-nav">
-            <Navigation onLogin={props.onLogin}  onClose={props.onClose}/>
+            <Navigation onLogin={props.onLogin}  onClose={props.onClose} loggedIn={props.loggedIn} />
             </div>
         </section>
     )

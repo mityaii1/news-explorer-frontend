@@ -47,7 +47,9 @@
     padding-left: 24px;
     outline: none;
 }
-
+.search-form__input-error{
+    color: #FF0000;
+}
 .search-form__button {
     width: 168px;
     height: 64px;

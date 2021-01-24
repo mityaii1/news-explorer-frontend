@@ -6,7 +6,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.main-no-results_hidden{
+    display: none;
+}
 .main-no-results__image{
     width: 96px;
     height: 96px;

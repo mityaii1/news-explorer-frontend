@@ -9,7 +9,13 @@ function Header(props) {
     return (
         <header className={`header ${pathname === '/saved-news' && 'header_dark'}`}>
             <Link className={`header__logo ${pathname === '/saved-news' && 'header__logo_dark'}`} to="/">NewsExplorer</Link>
-            <Navigation onLogin={props.onLogin} onMobileMenu={props.onMobileMenu} />
+            <Navigation 
+            onLogin={props.onLogin} 
+            onMobileMenu={props.onMobileMenu} 
+            loggedIn={props.loggedIn} 
+            name={props.name} 
+            onSignOut={props.onSignOut}
+            />
 
             <button className={`${pathname === '/' && 'header__mobile-menu header__mobile-menu_white'} ${pathname === '/saved-news' && 'header__mobile-menu header__mobile-menu_dark'} ${props.isPopupOpen && 'header__mobile-menu_hidden'} `} onClick={props.onMobileMenu}
             />
