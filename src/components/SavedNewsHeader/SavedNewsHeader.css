@@ -39,6 +39,12 @@
 .saved-news-header__tags_bold{
     font-weight: 900;
 }
+.saved-news-header__tags-span{
+    font-weight: 900;
+}
+.saved-news-header__tags-span_hidden{
+display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1180px){
     .saved-news-header{
         padding: 0 40px;

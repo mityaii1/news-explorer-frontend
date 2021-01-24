@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+.preloader_hidden{
+    display: none;
+}
 .preloader__text{
     font-family: 'Roboto', 'Arial', sans-serif;
     font-style: normal;
