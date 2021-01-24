@@ -4,8 +4,8 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 function SavedNewsHeader(props) {
     const currentUser = React.useContext(CurrentUserContext);
 
-    const my1Keywords = props.myArticles.map(item => item = item.keyword);
-    const myKeywords = [...new Set(my1Keywords)]
+    const myArrKeywords = props.myArticles.map(item => item = item.keyword);
+    const myKeywords = [...new Set(myArrKeywords)]
 
     const textNumberArticles = (number) => {
         if (number === 1) {
