@@ -53,7 +53,11 @@ function Register(props) {
                 />
                 <p className="popup__input-error">{props.inputError.name}</p>
             </div>
+
             <p className="popup__submit-error">{props.submitErrorText}</p>
+
+            <p className="popup__submit-error"></p>
+
         </PopupWithForm>
     )
 }

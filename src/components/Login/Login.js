@@ -39,7 +39,11 @@ function Login(props) {
                 />
                 <p className="popup__input-error">{props.inputError.password}</p>
             </div>
+
             <p className="popup__submit-error">{props.submitErrorText}</p>
+
+            <p className="popup__submit-error"></p>
+
         </PopupWithForm>
     )
 }

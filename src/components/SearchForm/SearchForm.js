@@ -23,6 +23,7 @@ function SearchForm(props) {
         <section className="search">
             <form className="search-form" onSubmit={handleSubmit} noValidate>
                 <h1 className="search-form__title">Что творится в мире?</h1>
+
                 <h2 className="search-form__subtitle" >Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
                 <input 
                 className={`search-form__input ${inputError && "search-form__input-error"}`} 
@@ -33,6 +34,10 @@ function SearchForm(props) {
                 value={inputValue || inputError}
                 onFocus={handleFocus}
                 />
+
+                <h2 className='search-form__subtitle'>Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
+                <input className="search-form__input" type="text" placeholder="Введите тему новости" onChange={handleChange} required />
+
                 <button type="submit" className="search-form__button">Искать</button>
             </form>
         </section>
